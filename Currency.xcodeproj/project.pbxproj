@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		EC54EC042084BF280072B7E5 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = EC54EC032084BF280072B7E5 /* main.c */; };
+		EC54EC0C2084BF640072B7E5 /* currency.c in Sources */ = {isa = PBXBuildFile; fileRef = EC54EC0B2084BF640072B7E5 /* currency.c */; };
+		ECAF96EE20875966000EEE7C /* graph.c in Sources */ = {isa = PBXBuildFile; fileRef = ECAF96ED20875966000EEE7C /* graph.c */; };
+		ECFE26702084C9B700D3BCAA /* hash.c in Sources */ = {isa = PBXBuildFile; fileRef = ECFE266F2084C9B700D3BCAA /* hash.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,15 @@
 /* Begin PBXFileReference section */
 		EC54EC002084BF280072B7E5 /* Currency */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Currency; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC54EC032084BF280072B7E5 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		EC54EC0A2084BF5E0072B7E5 /* currency.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = currency.h; sourceTree = "<group>"; };
+		EC54EC0B2084BF640072B7E5 /* currency.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = currency.c; sourceTree = "<group>"; };
+		ECAF96EC20875966000EEE7C /* graph.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = graph.h; sourceTree = "<group>"; };
+		ECAF96ED20875966000EEE7C /* graph.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = graph.c; sourceTree = "<group>"; };
+		ECAFBAC7208644DF00D76809 /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources; sourceTree = "<group>"; };
+		ECAFBAC82086450400D76809 /* data.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = data.txt; path = Resources/data.txt; sourceTree = "<group>"; };
+		ECAFBAC92086478400D76809 /* cur.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cur.txt; sourceTree = "<group>"; };
+		ECFE266E2084C9B700D3BCAA /* hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = hash.h; path = "../../../Documents/Acads/3/3-2/DSA/Lab/LabP/HashOA/hash.h"; sourceTree = "<group>"; };
+		ECFE266F2084C9B700D3BCAA /* hash.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = hash.c; path = "../../../Documents/Acads/3/3-2/DSA/Lab/LabP/HashOA/hash.c"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +53,8 @@
 		EC54EBF72084BF280072B7E5 = {
 			isa = PBXGroup;
 			children = (
+				ECAFBAC82086450400D76809 /* data.txt */,
+				ECAFBAC7208644DF00D76809 /* Resources */,
 				EC54EC022084BF280072B7E5 /* Currency */,
 				EC54EC012084BF280072B7E5 /* Products */,
 			);
@@ -57,7 +71,14 @@
 		EC54EC022084BF280072B7E5 /* Currency */ = {
 			isa = PBXGroup;
 			children = (
+				ECAFBAC92086478400D76809 /* cur.txt */,
+				ECFE266F2084C9B700D3BCAA /* hash.c */,
+				ECFE266E2084C9B700D3BCAA /* hash.h */,
+				EC54EC0B2084BF640072B7E5 /* currency.c */,
+				EC54EC0A2084BF5E0072B7E5 /* currency.h */,
 				EC54EC032084BF280072B7E5 /* main.c */,
+				ECAF96EC20875966000EEE7C /* graph.h */,
+				ECAF96ED20875966000EEE7C /* graph.c */,
 			);
 			path = Currency;
 			sourceTree = "<group>";
@@ -119,6 +140,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC54EC0C2084BF640072B7E5 /* currency.c in Sources */,
+				ECFE26702084C9B700D3BCAA /* hash.c in Sources */,
+				ECAF96EE20875966000EEE7C /* graph.c in Sources */,
 				EC54EC042084BF280072B7E5 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
