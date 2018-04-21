@@ -34,6 +34,12 @@ struct graph{
 };
 
 typedef struct graph* Graph;
-
-
-
+Graph createGraph(int size,int (*h)(void*,int),int (*c)(void*,void*));
+int addEdgeToGraph(Graph G, void* e1, void* e2,double weight);
+Vertex getVertex(Graph G, int index);
+int addEdgeToGraphHelper(Graph G, Vertex v1, Vertex v2, double weight);
+int addVertex(Graph G, void* e);
+int lookupGraph(Graph G, void* e);
+Vertex createVertex(void* e, int id);
+int areEqualVertices(Graph G, void* a, void* b);
+int hashVertex(Graph G, void* cur, int bound);
