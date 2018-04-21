@@ -16,36 +16,9 @@
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
-
-int randomAlphabet(){
-    return 65+(rand()%26);
-}
-
-HT generateRandom(){
-    int size = 162;
-    FILE* f = fopen("currencies","r");
-    char* temp = (char*)malloc(sizeof(char)*4);
-    int a = fscanf(f, "%s",temp);
-    Currency* currencies = (Currency*)malloc(sizeof(Currency)*size);
-    HT h = createHT(size, &hashCurrency, &areEqualCurrencies);
-    for(int i =0;i<size;i++){
-        //currencies[i] = createCurrency(<#char *key#>)
-        //for(int j = 0;j<3;j++)
-          //  temp[j] = (char)randomAlphabet();
-        currencies[i] = createCurrency(temp);
-        printf("%s\n",currencies[i]->key);
-        int flag = addCurrency(h, currencies[i]);
-        if(flag == 0){
-            printf("Could Not Insert %dth element\n",i);
-            break;
-        }
-        if(flag == -1){
-            printf("Already inserted the currency %s\n",currencies[i]->key);
-        }
-        a = fscanf(f, "%s",temp);
-    }
-    return h;
-}
+#ifndef utilities_h
+#include "utilities.h"
+#endif
 
 int main(int argc, const char * argv[]) {
     // insert code here...
@@ -65,7 +38,10 @@ int main(int argc, const char * argv[]) {
 //        c = fgetc(f);
 //
 //    }
-    HT h = generateRandom();
+    char* name = "currencies";
+    Array c = parseCurrencies(name);
+    Graph g = generateGraph(c);
+   // HT h = generateHT(c);
     
     return 0;
 }
