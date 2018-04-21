@@ -104,10 +104,12 @@ int addEdgeToGraph(Graph G, void* e1, void* e2,double weight){
 Graph createGraph(int size,int (*h)(void*,int),int (*c)(void*,void*)){
     Graph G = (Graph)malloc(sizeof(struct graph));
     G->size = size;
+    
     G->adj = (double**)malloc(sizeof(double*)*size);
     G->vertices = (Vertex*)malloc(sizeof(Vertex)*size);
     G->compare = c;
     G->hash = h;
+    G->table = createHT(size*2,G->hash,G->compare);
     for(int i = 0;i<size;i++){
         G->adj[i] = (double*)malloc(sizeof(double)*size);
         for(int j = 0;j<size;j++){
