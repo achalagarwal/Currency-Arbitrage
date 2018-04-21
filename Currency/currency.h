@@ -11,7 +11,9 @@
 #include <stdio.h>
 
 #endif /* currency_h */
+#ifndef hash_h
 #include "hash.h"
+#endif
 struct currency;
 typedef struct currency* Currency;
 
