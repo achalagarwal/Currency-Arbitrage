@@ -10,6 +10,7 @@
 		EC54EC042084BF280072B7E5 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = EC54EC032084BF280072B7E5 /* main.c */; };
 		EC54EC0C2084BF640072B7E5 /* currency.c in Sources */ = {isa = PBXBuildFile; fileRef = EC54EC0B2084BF640072B7E5 /* currency.c */; };
 		ECAF96EE20875966000EEE7C /* graph.c in Sources */ = {isa = PBXBuildFile; fileRef = ECAF96ED20875966000EEE7C /* graph.c */; };
+		ECC0EA02208CBCCB0004EA1B /* utilities.c in Sources */ = {isa = PBXBuildFile; fileRef = ECC0EA01208CBCCB0004EA1B /* utilities.c */; };
 		ECFE26702084C9B700D3BCAA /* hash.c in Sources */ = {isa = PBXBuildFile; fileRef = ECFE266F2084C9B700D3BCAA /* hash.c */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,8 @@
 		ECAFBAC7208644DF00D76809 /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources; sourceTree = "<group>"; };
 		ECAFBAC82086450400D76809 /* data.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = data.txt; path = Resources/data.txt; sourceTree = "<group>"; };
 		ECAFBAC92086478400D76809 /* cur.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cur.txt; sourceTree = "<group>"; };
+		ECC0EA00208CBCCB0004EA1B /* utilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = utilities.h; sourceTree = "<group>"; };
+		ECC0EA01208CBCCB0004EA1B /* utilities.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = utilities.c; sourceTree = "<group>"; };
 		ECFE266E2084C9B700D3BCAA /* hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = hash.h; path = "../../../Documents/Acads/3/3-2/DSA/Lab/LabP/HashOA/hash.h"; sourceTree = "<group>"; };
 		ECFE266F2084C9B700D3BCAA /* hash.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = hash.c; path = "../../../Documents/Acads/3/3-2/DSA/Lab/LabP/HashOA/hash.c"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,6 +82,8 @@
 				EC54EC032084BF280072B7E5 /* main.c */,
 				ECAF96EC20875966000EEE7C /* graph.h */,
 				ECAF96ED20875966000EEE7C /* graph.c */,
+				ECC0EA00208CBCCB0004EA1B /* utilities.h */,
+				ECC0EA01208CBCCB0004EA1B /* utilities.c */,
 			);
 			path = Currency;
 			sourceTree = "<group>";
@@ -143,6 +148,7 @@
 				EC54EC0C2084BF640072B7E5 /* currency.c in Sources */,
 				ECFE26702084C9B700D3BCAA /* hash.c in Sources */,
 				ECAF96EE20875966000EEE7C /* graph.c in Sources */,
+				ECC0EA02208CBCCB0004EA1B /* utilities.c in Sources */,
 				EC54EC042084BF280072B7E5 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

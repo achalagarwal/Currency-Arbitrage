@@ -2,12 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:../../../Documents/Acads/3/3-2/DSA/Lab/LabP/HashOA/hash.c">
-   </FileRef>
-   <FileRef
-      location = "group:../../../Documents/Acads/3/3-2/DSA/Lab/LabP/HashOA/hash.h">
-   </FileRef>
-   <FileRef
       location = "self:">
    </FileRef>
 </Workspace>
